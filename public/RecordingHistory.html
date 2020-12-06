@@ -2,10 +2,39 @@
 <html>
 
 <head>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+        .active {
+  background-color: #4CAF50;
+}
+    </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Familiar Voice</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
 </head>
 
 <body>
@@ -14,25 +43,24 @@
         <li><a href="RecordingHistory.html">RecordingHistory</a></li>
         <li><a href="record.html">Record</a></li>
         </li>
-        </ul>
-        </nav>
+    </ul>
+    </nav>
     </div>
 
 
     </nav>
     <h1>Access Previous Recordings Here</h1>
     <audio id="recordedAudio"></audio>
-    //<table id="recordingtable">
+    <!--<table id="recordingtable">
         //if we decide to use a table to hold recordings this is here
 
 
-    //</table>
+        //</table>
 
 
 
 
-
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
 
     <!-- TODO: Add SDKs for Firebase products that you want to use
