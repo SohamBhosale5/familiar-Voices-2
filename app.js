@@ -11,10 +11,26 @@ client.connect(err => {
 
 'use strict';
 
+/**
+ * NPM Module dependencies.
+ */
 const express = require('express');
-const app = express();
+const trackRoute = express.Router();
+const multer = require('multer');
 
-const mongoose = require('mongoose')
+const mongodb = require('mongodb');
+const MongoClient = require('mongodb').MongoClient;
+const ObjectID = require('mongodb').ObjectID;
+
+/**
+ * NodeJS Module dependencies.
+ */
+const { Readable } = require('stream');
+
+//const express = require('express');
+//const app = express();
+
+//const mongoose = require('mongoose')
 
 const url ="mongodb+srv://RoseM:FamiliarVoice@familiarvoicecluster.eij5d.mongodb.net/hi?retryWrites=true&w=majority";
 
